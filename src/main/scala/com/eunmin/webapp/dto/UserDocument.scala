@@ -11,14 +11,12 @@ case class UserDocument
   lastName: String,
   createdAt: Date,
 ) {
-  def toDomain(): User = {
-    val email = Email(this.email)
-    val firstName = Name(this.firstName)
-    val lastName = Name(this.lastName)
-    val createdAt = new Date()
-
-    User(email, firstName, lastName, createdAt)
-  }
+  def toDomain(): Either[Exception,User] = for {
+    email <- Email(this.email)
+    firstName <- Name(this.firstName)
+    lastName <- Name(this.lastName)
+    createdAt = new Date()
+  } yield User(email, firstName, lastName, createdAt)
 }
 
 object UserDocument {

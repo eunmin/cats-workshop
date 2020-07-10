@@ -9,18 +9,19 @@ import org.springframework.stereotype.Repository
 
 @Repository
 class UserRepository @Autowired()(mongoTemplate: MongoTemplate) {
-  def findOneByEmail(email: String): User = {
+  def findOneByEmail(email: String): Either[Exception,Option[User]] = {
     val query = new Query()
     query.addCriteria(Criteria.where("email").is(email))
-
     val userDocument = mongoTemplate.findOne(query, classOf[UserDocument])
+
     if (userDocument == null) {
-      return null
+      Right(None)
+    } else {
+      userDocument.toDomain().map(Some(_))
     }
-    userDocument.toDomain()
   }
 
-  def save(user: User): User = {
+  def save(user: User): Either[Exception,User] = {
     val userDocument = UserDocument.fromDomain(user)
     mongoTemplate.save(userDocument).toDomain()
   }

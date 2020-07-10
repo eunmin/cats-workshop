@@ -7,10 +7,10 @@ import javax.persistence.Embeddable
 case class Email(value: String)
 
 object Email {
-  def apply(value: String) = {
+  def apply(value: String): Either[Exception, Email] =
     if (!"""(\w+)@([\w\.]+)""".r.unapplySeq(value).isDefined) {
-      throw InvalidEmailFormatException()
+      Left(InvalidEmailFormatException())
+    } else {
+      Right(new Email(value))
     }
-    new Email(value)
-  }
 }

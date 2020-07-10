@@ -9,6 +9,6 @@ import org.springframework.web.bind.annotation.{PostMapping, RequestBody, RestCo
 class UserController @Autowired()(userService: UserService) {
   @PostMapping(path = Array("/users"))
   def create(@RequestBody input: CreateUserDto): UserDto = {
-    userService.create(input)
+    userService.create(input).fold(ex => throw ex, identity)
   }
 }
