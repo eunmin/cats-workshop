@@ -1,7 +1,7 @@
 package com.eunmin.webapp.controller
 
 import com.eunmin.webapp.dto.{CreateUserDto, UserDto}
-import com.eunmin.webapp.service.UserService
+import com.eunmin.webapp.model.usecase.UserService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.{PostMapping, RequestBody, RestController}
 

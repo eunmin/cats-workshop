@@ -1,7 +1,9 @@
 package com.eunmin.webapp.dto
 
 import java.util.Date
-import com.eunmin.webapp.model.{Email, Name, User}
+
+import com.eunmin.webapp.model.entity.{Email, Name, User}
+
 import scala.beans.BeanProperty
 
 case class CreateUserDto

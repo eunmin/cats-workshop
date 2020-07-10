@@ -1,4 +1,4 @@
-package com.eunmin.webapp.model
+package com.eunmin.webapp.model.entity
 
 import com.eunmin.webapp.exception.InvalidEmailFormatException
 import javax.persistence.Embeddable

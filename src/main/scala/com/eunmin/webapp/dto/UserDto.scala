@@ -1,6 +1,6 @@
 package com.eunmin.webapp.dto
 
-import com.eunmin.webapp.model.User
+import com.eunmin.webapp.model.entity.User
 
 import scala.beans.BeanProperty
 

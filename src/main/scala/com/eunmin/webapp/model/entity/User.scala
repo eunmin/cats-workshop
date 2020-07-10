@@ -1,4 +1,4 @@
-package com.eunmin.webapp.model
+package com.eunmin.webapp.model.entity
 
 import java.util.Date
 
