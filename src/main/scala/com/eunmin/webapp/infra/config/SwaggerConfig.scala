@@ -1,4 +1,4 @@
-package com.eunmin.webapp.config
+package com.eunmin.webapp.infra.config
 
 import org.springframework.context.annotation.{Bean, Configuration}
 import springfox.documentation.builders.{PathSelectors, RequestHandlerSelectors}

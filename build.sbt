@@ -15,4 +15,4 @@ libraryDependencies ++= Seq(
   "org.typelevel" %% "cats-free" % "2.1.0"
 )
 
-mainClass in Compile := Some("com.eunmin.webapp.Main")
+mainClass in Compile := Some("com.eunmin.webapp.infra.Main")

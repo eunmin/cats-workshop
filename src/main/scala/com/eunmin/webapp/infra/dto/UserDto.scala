@@ -1,6 +1,6 @@
-package com.eunmin.webapp.dto
+package com.eunmin.webapp.infra.dto
 
-import com.eunmin.webapp.model.entity.User
+import com.eunmin.webapp.domain.user.entity.User
 
 import scala.beans.BeanProperty
 
