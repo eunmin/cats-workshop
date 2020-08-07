@@ -1,5 +1,9 @@
 # Cats Workshop
 
+## 시작 커밋
+
+https://github.com/eunmin/cats-workshop/tree/b4699d6252670a2324841a3bef4071d0a37a9592
+
 ## 함수형 프로그래밍
 
 - 부수 효과가 없는 순수 함수로 코드를 만드는 것
