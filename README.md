@@ -40,6 +40,8 @@ https://github.com/eunmin/cats-workshop/tree/c4c6aa54846530634eebcdf55d3b75a7131
   
 ## Step3. Free 모나드로 표현과 실행 방법(시점)을 분리하기
 
+https://github.com/eunmin/cats-workshop/tree/071623d7c32153bf17cbfde4fabbe262503cc856
+
 - 도메인은 표현을 인프라는 실행 방법을 나타낸다고 할 때 Free 모나드로 표현과 실행 방법(시점)을 분리할 수 있다.
 - Free의 장점
   - 코드와 실행기를 분리할 수 있어 더 복잡성을 줄일 수 있다.
