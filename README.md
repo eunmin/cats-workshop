@@ -1,5 +1,7 @@
 # Cats Workshop
 
+함수형 프로그래밍의 실천적 예제를 학습하기 위해 만든 예제 프로젝트입니다. 일반적인 Spring 웹 애플리케이션에 함수형 프로그래밍을 에러 처리, IO 처리, 클린 아키텍처를 실용적으로 적용한 예제입니다.
+
 ## 시작 커밋
 
 https://github.com/eunmin/cats-workshop/tree/b4699d6252670a2324841a3bef4071d0a37a9592
