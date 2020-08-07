@@ -26,6 +26,8 @@ https://github.com/eunmin/cats-workshop/tree/7b52261214dc3b6df9abe599c07765522c5
 
 ## Step2. IO를 순수하게 만들기
 
+https://github.com/eunmin/cats-workshop/tree/c4c6aa54846530634eebcdf55d3b75a7131d6354
+
 - IO를 실행하는 곳에서 IO를 실행하지 않고 IO를 실행할 것이라는 함수로 감싸고 나중에 실행한다.
 - IO 형식의 장점
   - 형식적으로 참조 투명 (큰 가치는 없다)
